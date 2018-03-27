@@ -1,0 +1,40 @@
+diff a/src/reducers/user.js b/src/reducers/user.js	(rejected hunks)
+@@ -12,20 +12,32 @@
+     if (action.type !== API_LOGIN) {
+         return state;
+     }
+-    return {meta: action.data.meta, object: action.data.object};
++    return {
++        meta: action.data ? action.data.meta : {
++            code: "-1",
++            message: ""
++        }, object: action.data?action.data.object:{}
++    };
+ }
+ 
+ export function logout(state = {code: -1, msg: "", data: {}}, action) {
+     if (action.type !== API_LOGOUT) {
+         return state;
+     }
+-    return {code: action.data.code, msg: action.data.msg};
++    return {
++        meta: action.data ? action.data.meta : {
++            code: "-1",
++            message: ""
++        }, object: action.data?action.data.object:{}
++    };
+ }
+ 
+-export function userInfo(state = {meta: {
+-    code: "-1",
+-    message: ""
+-}, object: {}}, action) {
++export function userInfo(state = {
++    meta: {
++        code: "-1",
++        message: ""
++    }, object: {}
++}, action) {
+ 
+     if (action.type !== API_USER_INFO) {
+         return state;

@@ -1,0 +1,19 @@
+import {API_REFUND_LIST} from '../../constants/ActionType';
+
+
+export function refundList(state = {
+    meta: {
+        code: "-1",
+        message: ""
+    }, object: {}
+}, action) {
+    if (action.type !== API_REFUND_LIST) {
+        return state;
+    }
+    return {
+        meta: action.data ? action.data.meta : {
+            code: "-1",
+            message: ""
+        }, object: action.data?action.data.object:{}
+    };
+}

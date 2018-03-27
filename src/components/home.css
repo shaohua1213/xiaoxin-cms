@@ -1,0 +1,141 @@
+.home_div{
+    width:30%;
+    height: 40%;
+    text-align: center;
+    position: absolute;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px;
+    font-size: 30px;
+}
+.my-div{
+    display: flex;
+}
+.my-horizontal-div{
+    display: flex;
+    flex-direction: row;
+}
+.my-title-text{
+    font-size: 18px;
+    color:#666
+}
+.my-input-before-text{
+    width:64px;
+}
+.my-input-before-text1{
+    width:80px;
+}
+.my-input-before-text2{
+    width:100px;
+}
+.my-content-text{
+    font-size: 15px;
+    color:#777
+}
+.my-content-text1{
+    font-size: 15px;
+    color:#555
+}
+.margin-left10{
+    margin-left: 10px;
+}
+.margin-right10{
+    margin-right: 10px;
+}
+.margin-top10{
+    margin-top: 10px;
+}
+.margin-top5{
+    margin-top: 5px;
+}
+.margin-top20{
+    margin-top: 20px;
+}
+.margin-bottom10{
+    margin-bottom: 10px;
+}
+.my-content-header{
+    padding:0;
+    margin: 0;
+    background: white;
+    height: auto;
+    line-height: normal;
+}
+/* 课程上传图片 */
+/* .cour-up .ant-upload-list-picture .ant-upload-list-item{
+    width:200px;
+} */
+.shenhe-div{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top-width: 1px;
+    border-color: #666;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+.shenhe-div1{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top-width: 1px;
+    border-color: #999;
+    border-style: dashed;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+/*打印的表格*/
+.my-center{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+
+    border-color: #dddddd;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+}
+.my-center-title{
+    font-weight: 500;
+}
+.my-center-flex{
+    flex: 1.2;
+}
+.my-center-flex2{
+    flex: 2;
+}
+.my-center-body{
+    border-color: #e8e8e8;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+.my-center-child{
+    border-color: #e8e8e8;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+}

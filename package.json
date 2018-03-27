@@ -1,0 +1,36 @@
+{
+  "name": "xiaoxin-cms",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.1.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-tap-event-plugin": "^3.0.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.3",
+    "babel-polyfill": "^6.26.0",
+    "react-app-rewire-less": "^2.1.0",
+    "react-app-rewired": "^1.4.1",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/*": {
+      "target": "http://manager.newglish.com",
+      "changeOrigin": true,
+      "secure": false
+    }
+  }
+}
